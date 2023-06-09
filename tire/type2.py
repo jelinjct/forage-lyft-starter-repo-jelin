@@ -1,9 +1,8 @@
-from abc import ABC
 
-from car import Car
+from tire.tire import Tire
 
 
-class Type2(Car, ABC):
+class Type2(Tire):
     def __init__(self,airpressure_in_psi):
         self.airpressure_in_psi = airpressure_in_psi
 
