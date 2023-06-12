@@ -4,7 +4,7 @@ from battery.spindlerbattery import Spindler_battery
 
 class TestSpindler(unittest.TestCase):
     def test_needs_service_true(self):
-        current_date = date.fromisoformat("2022-09-10")
+        current_date = date.fromisoformat("2023-09-10")
         last_service_date = date.fromisoformat("2020-05-20")
         battery=Spindler_battery(current_date,last_service_date)
         self.assertTrue(battery.needs_service())
